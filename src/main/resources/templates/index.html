@@ -8,5 +8,14 @@
 <body>
     <p>Get your student <a href="/student">here</a></p>
     <h1>Spring Boot!</h1>
+
+    <div th:each="item : ${hikingItems}">
+        <h3 th:text="${item}">123</h3>
+    </div>
+
+    <ol>
+        <li>pirmais punkts</li>
+        <li>otrais punkts</li>
+    </ol>
 </body>
 </html>
